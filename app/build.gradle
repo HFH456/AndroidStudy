@@ -16,17 +16,35 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+//    signingConfigs {
+//        Properties properties = new Properties()
+//        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//        debug {
+//            storeFile file("${rootProject.projectDir}/keystore/debug.keystore")
+//            storePassword properties.getProperty("key.password_debug")
+//            keyAlias 'debugkey'
+//            keyPassword properties.getProperty("key.password_debug")
+//        }
+//
+//        release {
+//            storeFile file("${rootProject.projectDir}/keystore/release.keystore")
+//            storePassword properties.getProperty("key.password_release")
+//            keyAlias 'releasekey'
+//            keyPassword properties.getProperty("key.password_release")
+//        }
+//    }
+
     signingConfigs {
         Properties properties = new Properties()
-        properties load(project.rootProject.file('local.properties').newDataInputStream())
-        app-debug{
-            storeFile file("${rootProject}/keystores/debug.keystore")
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        debug{
+            storeFile file("${rootProject.projectDir}/keystores/debug.keystore")
             storePassword properties.getProperty("key.password")
             keyAlias 'debug'
             keyPassword properties.getProperty("key.password")
         }
-        app-release{
-            storeFile file("${rootProject}/keystores/release.keystore")
+        release{
+            storeFile file("${rootProject.projectDir}/keystores/release.keystore")
             storePassword properties.getProperty("key.password")
             keyAlias 'release'
             keyPassword properties.getProperty("key.password")
@@ -36,11 +54,11 @@ android {
     buildTypes {
         debug {
             minifyEnabled false
-            signingConfigs signingConfigs.app-debug
+            signingConfig signingConfigs.debug
         }
         release {
             minifyEnabled false
-            signingConfigs signingConfigs.app-release
+            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
