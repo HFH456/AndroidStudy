@@ -8,7 +8,7 @@
     <string name="i_am_second_layer">我是第二层</string>
     <string name="welcome">welcome</string>
     <string name="hello">hello</string>
-    <string name="button1">button 1</string>
-    <string name="button2">button 2</string>
-    <string name="button3">button 3</string>
+    <string name="button1">按钮 1</string>
+    <string name="button2">按钮 2</string>
+    <string name="button3">按钮 3</string>
 </resources>
