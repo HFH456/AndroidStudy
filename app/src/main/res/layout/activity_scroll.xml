@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:background="@color/teal_700"
+        android:textSize="24sp"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:gravity="center"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/hello"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:gravity="center"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/hello"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_light"
+                android:text="@string/hello"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

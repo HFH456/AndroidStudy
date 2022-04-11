@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="@dimen/dimen_300"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:text="@string/i_am_first_layer" />
+
+    <TextView
+        android:layout_width="@dimen/dimen_120"
+        android:layout_height="@dimen/dimen_120"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="@string/i_am_second_layer" />
+
+
+</FrameLayout>
