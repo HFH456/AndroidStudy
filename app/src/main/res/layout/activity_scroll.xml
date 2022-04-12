@@ -26,6 +26,7 @@
                 android:layout_marginStart="50dp"
                 android:layout_marginEnd="50dp"
                 android:text="@string/button1"
+                android:onClick="goNextActivity"
                 android:background="@color/gray" />
             <Button
                 android:layout_width="match_parent"

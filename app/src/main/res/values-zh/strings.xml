@@ -7,7 +7,7 @@
     <string name="i_am_first_layer">我是第一层</string>
     <string name="i_am_second_layer">我是第二层</string>
     <string name="welcome">welcome</string>
-    <string name="hello">hello</string>
+    <string name="hello">Hello!</string>
     <string name="button1">按钮 1</string>
     <string name="button2">按钮 2</string>
     <string name="button3">按钮 3</string>
@@ -19,4 +19,8 @@
     <string name="button9">按钮 9</string>
     <string name="button10">按钮 10</string>
     <string name="android_practice">Android 练习</string>
+    <string name="reminder">reminder</string>
+    <string name="done">done</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
 </resources>
