@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="tianyi">#FF66CCFF</color>
     <color name="gray">#FFA0A0A0</color>
+    <color name="blue1">#FF1f4ba5</color>
+    <color name="E4">#FFe4e4e4</color>
     <drawable name="clr_normal">#ff6501</drawable>
     <drawable name="clr_pressed">#a44100</drawable>
 </resources>
