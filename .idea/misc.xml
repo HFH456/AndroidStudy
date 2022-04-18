@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/signup_button_shape.xml" value="0.299" />
         <entry key="app/src/main/res/layout/activity_addview.xml" value="0.40730593607305937" />
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/layout/activity_contact.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_frame.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/activity_hello.xml" value="0.35294117647058826" />
@@ -18,6 +19,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32669372558593746" />
         <entry key="app/src/main/res/layout/activity_relativelayout.xml" value="0.30117753623188404" />
         <entry key="app/src/main/res/layout/activity_scroll.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/login_layout.xml" value="0.23229166666666667" />
       </map>
     </option>
   </component>

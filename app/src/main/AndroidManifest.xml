@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHelloWorld">
         <activity
+            android:name=".ContactActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.permission.READ_CONTACTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -24,6 +33,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
 </manifest>
