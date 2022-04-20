@@ -13,12 +13,16 @@
         <entry key="app/src/main/res/layout/activity_constraint.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_contact.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/activity_display_message.xml" value="0.4244791666666667" />
+        <entry key="app/src/main/res/layout/activity_fragment_switch.xml" value="0.14837341308593752" />
         <entry key="app/src/main/res/layout/activity_frame.xml" value="0.23229166666666667" />
         <entry key="app/src/main/res/layout/activity_hello.xml" value="0.35294117647058826" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.4244791666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32669372558593746" />
         <entry key="app/src/main/res/layout/activity_relativelayout.xml" value="0.30117753623188404" />
         <entry key="app/src/main/res/layout/activity_scroll.xml" value="0.23229166666666667" />
+        <entry key="app/src/main/res/layout/android_text_layout.xml" value="0.2625" />
+        <entry key="app/src/main/res/layout/fragment_1.xml" value="0.41041666666666665" />
+        <entry key="app/src/main/res/layout/java_text_layout.xml" value="0.2625" />
         <entry key="app/src/main/res/layout/login_layout.xml" value="0.23229166666666667" />
       </map>
     </option>

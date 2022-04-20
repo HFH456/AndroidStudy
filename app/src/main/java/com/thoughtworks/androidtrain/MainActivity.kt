@@ -41,6 +41,11 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(intent, PICK_CONTACT_REQUEST)
     }
 
+    fun goFragmentActivity(view: View) {
+        val intent = Intent(this, FragmentChangeActivity::class.java).apply {}
+        startActivity(intent)
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 //        if (requestCode == 1 && resultCode == RESULT_OK && data != null) {
