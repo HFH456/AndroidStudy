@@ -12,7 +12,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-
 val PICK_CONTACT_REQUEST = 1
 
 class MainActivity : AppCompatActivity() {
@@ -43,6 +42,11 @@ class MainActivity : AppCompatActivity() {
 
     fun goFragmentActivity(view: View) {
         val intent = Intent(this, FragmentChangeActivity::class.java).apply {}
+        startActivity(intent)
+    }
+
+    fun goRecyclerViewActivity(view: View) {
+        val intent = Intent(this, RecyclerViewActivity::class.java).apply {}
         startActivity(intent)
     }
 
