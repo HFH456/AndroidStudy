@@ -20,11 +20,10 @@ class ThreadActivity : AppCompatActivity() {
     private fun buttonClick() {
 
         button.setOnClickListener {
-            val lock = ReentrantLock()
-
-            button.isEnabled = false
-            lock.lock()
             val countToTen = thread {
+                runOnUiThread(Runnable {
+                    button.isEnabled = false
+                })
                 var i = 0
                 do {
                     runOnUiThread(Runnable {
@@ -33,12 +32,11 @@ class ThreadActivity : AppCompatActivity() {
                     i += 1
                     Thread.sleep(500)
                 } while (i != 10)
-//                runOnUiThread(Runnable {
-//                    button.setText("等待完成")
-//                })
+                runOnUiThread(Runnable {
+                    button.isEnabled = true
+                    button.setText("等待完成")
+                })
             }
-            countToTen.join()
-            button.isEnabled = true
         }
     }
 }
