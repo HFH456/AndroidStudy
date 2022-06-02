@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
 import kotlinx.android.synthetic.main.activity_thread.*
+import java.util.concurrent.locks.ReentrantLock
 import kotlin.concurrent.thread
 
 class ThreadActivity : AppCompatActivity() {
@@ -17,34 +18,27 @@ class ThreadActivity : AppCompatActivity() {
     }
 
     private fun buttonClick() {
-        val mRunnable = Runnable {
-            run {
-                var i = 0
-                do {
-                    i += 1
-                    button.setText(i)
-                    Thread.sleep(1000)
-                } while (i != 10)
-
-//                button.setText(Thread.currentThread().name)
-            }
-        }
 
         button.setOnClickListener {
-            thread {
+            val lock = ReentrantLock()
+
+            button.isEnabled = false
+            lock.lock()
+            val countToTen = thread {
                 var i = 0
                 do {
                     runOnUiThread(Runnable {
-                        button.setText("等待中")
+                        button.setText(i.toString())
                     })
                     i += 1
-                    Thread.sleep(1000)
+                    Thread.sleep(500)
                 } while (i != 10)
-                runOnUiThread(Runnable {
-                    button.setText("等待完成")
-                })
-                println(Thread.currentThread().name)
+//                runOnUiThread(Runnable {
+//                    button.setText("等待完成")
+//                })
             }
+            countToTen.join()
+            button.isEnabled = true
         }
     }
 }
